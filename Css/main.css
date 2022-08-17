@@ -1,0 +1,486 @@
+.slide{
+    width: 100%;
+    margin: 5px 0px;
+}
+.slide-img{
+    width: 100%;
+    height: 350px;
+}
+.slide-img img{
+    width: 100%;
+    height: 350px;
+}
+.product, .teamofexperts,.new,.contact{
+    margin: 10px 0px;
+}
+.product-head{
+    border-bottom: 2px solid rgb(87, 255, 114);
+}
+.product-head p{
+/*	color: white;*/
+    padding: 10px;
+    display: inline-block;
+    background-color: rgb(83, 245, 155);
+    font-size: 25px;
+    font-weight: bold;
+}
+.product-head span{
+	float: right;
+	padding: 10px 0px;
+} 
+.product-list{
+	clear: right;
+}
+.product-list-img{
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0px;
+	padding: 5px;
+}
+.product-list-img_withheight{
+    width: 100%;
+    height: 250px;
+    padding-bottom: 5px;
+}
+.product-list-img_withheight>img{
+    width: 100%;
+    height: 250px;
+	transition: all 0.5s ease-in;
+}
+.product-list-img_withheight > img:hover{
+	 transform: translate(0px,-15px);
+}
+.product-list-text{
+    text-align: center;
+    background-color: rgba(83, 245, 155,0.5);
+	border-radius: 0px 0px 25px 25px;
+}
+.product-list-text p{
+    padding: 20px 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.product-list-text p a{
+	color: black;
+}
+.teamofexperts-bg{
+	background-color: rgba(16, 163, 67,0.5);
+}
+.teamofexperts-list{
+	width: 100%;
+    display: inline-flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	text-align: center;
+	position: relative;
+}
+.teamofexperts-list-img{
+	width: 100%;
+    display: inline-block;
+    margin: 10px 0px;
+	padding: 5px; 
+}
+.teamofexperts-list-img img{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+}
+.teamofexperts-list-text{
+	position:absolute;
+	text-align: center;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 280px;
+/*	display: none;*/
+}
+.teamofexperts-list-text-img{
+	border-radius: 50%;
+	margin: 15px 34px;
+	padding: 5px; 
+	width: 250px;
+	height: 250px;
+	background-color: rgba(112, 232, 90,0.3);
+}
+.teamofexperts-list-img:hover + .teamofexperts-list-text{
+	display: block;
+}
+.teamofexperts-list-text-img >h3{
+	margin: 100px 0px;
+	color: rgb(0, 0, 0);
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.teamofexperts-list-text >p{
+	margin: 160px 0px;
+}
+.new{
+	margin: 10px 0px;
+}
+.new-list{
+	display:inline-block;
+	margin: 10px 0px;
+	padding: 8px;
+	line-height: 1.6;
+	
+}
+.new-list-img img{
+	width: 100%;
+	height: 150px;
+}
+.new-list-text p{
+	text-align: justify;
+}
+.new-list-img p i{
+	font-size: 12px;
+}
+.contact{
+	background-color: rgba(87, 255, 114,0.7);
+	margin-bottom: 30px;
+}
+.contact-text{
+	line-height: 2;
+	padding: 30px;
+}
+.contact-text p:last-child{
+	text-align: center;
+	margin: 25px;
+}
+.contact-text h1{
+	font-size: 30px;
+	font-weight: bold;
+}
+.contact-img{
+	width: 100%;
+	overflow: hidden;
+}
+.imgslider{
+	width: 100%;
+	padding: 30px;
+	transition: all 2s ease-out;
+}
+.imgslider:hover{
+	transform: translateX(80%);
+}
+
+.book-text{
+	width: 100%;
+	display: inline-block;
+	margin: 20px 0px;
+	line-height: 3;
+	padding: 10px;
+	box-shadow: 0px 5px 5px 5px rgba(117, 116, 113,0.4);
+}
+.book-text h4{
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 5px 5px 10px rgba(117, 116, 113,0.4);
+}
+.book-text p{
+	font-size: 20px;
+	font-weight: bold;
+}
+.book-text p span{
+	display: inline;
+	border-radius: 25px;
+	background-color: rgb(249, 149, 77);
+	padding: 2px 25px;
+	margin:0px 20px;
+	cursor: pointer;
+}
+.book-text p input,select{
+	display: inline-block;
+	margin:0px 10px;
+	border: none;
+}
+.book-text p input{
+	width: 130px;
+}
+.book-btn{
+	text-align: center;
+}
+.service{
+	background-color: rgb(240, 219, 27);
+	margin: 20px 0px;
+}
+.service-text{
+	line-height: 2;
+	padding: 30px;
+}
+.service-text h1{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+}
+.service-list .service-list-items:nth-child(2){
+	background-color: white;
+}
+.service-list-items{
+	margin: 10px 0px;
+}
+.catogery{
+	margin: 25px 0px;
+}
+.catogery-search{
+	text-align: center;
+	width: 100%;
+}
+.catogery-search-ceter{
+	width: 100%;
+}
+.catogery-search-ceter input{
+	padding: 10px;
+	width: 80%;
+}
+.catogery-list{
+	margin: 20px 0px;
+}
+.catogery-list-btn{
+	margin: 20px 0px;
+	text-align: center;
+}
+.catogery-list-btn button{
+	padding: 10px 25px;
+	background-color: rgb(165, 160, 157);
+	margin: 10px;
+	cursor: pointer;
+	border: none;
+	border-radius: 20px;
+}
+.catogery-list-btn button:first-child{
+	background-color: rgb(247, 108, 5);
+}
+.catogery-pading{
+	padding: 10px;
+}
+.catogery-bg{
+	background-color: rgba(165, 160, 157,0.3);
+	border-radius: 25px;
+}
+.catogery-img{
+	width: 100%;
+	margin: 10px 0px;
+}
+.catogery-img img{
+	padding: 10px;
+	width: 100%;
+	height: 250px;
+}
+.catogery-pice{
+	margin: 5px 0px;
+	text-align: center;
+	line-height: 1.6;
+}
+.catogery-pading{
+	text-align: center;
+}
+.catogery-pading >ul{
+	display: inline-block;
+	text-align: center;
+}
+.catogery-pading >ul>li{
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: rgb(5, 173, 237);
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+.catogery-pading >ul>li:hover{
+	background-color: rgb(167, 212, 229);
+}
+.catogery-pading >ul>li:nth-child(2){
+	background-color: rgb(167, 212, 229);
+}
+.contact-head{
+	margin: 20px 2px;
+}
+.contact-head>h1{
+	font-size: 20px;
+	font-weight: bold;
+}
+.contact-text-ceter{
+	text-align: justify;
+	margin-bottom: 30px;
+}
+.productdetail-img{
+	width: 100%;
+}
+.productdetail-img >img{
+	text-align: left;
+	width: 60%;
+}
+.productdetail-head{
+	margin: 20px;
+}
+.productdetail-head>h1{
+	margin: 10px;
+}
+.productdetail-img >p{
+	margin: 10px 60px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.productdetail-text{
+	line-height: 3;
+}
+.productdetail-text p{
+	font-size: 20px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+.productdetail-text span{
+	padding: 10px 20px;
+	background-color: rgb(219, 213, 208);
+	margin-right: 10px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.productdetail-text span:first-child{
+	background-color: rgb(219, 112, 11);
+}
+.productdetail-text label{
+	margin-right: 20px;
+}
+.productdetail-text input{
+	border: none;
+}
+.productdetail-btn{
+	margin: 20px;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.productdetail-btn p{
+	display: inline-block;
+	margin-right: 10px;
+}
+.productdetail-text-detail{
+	margin: 20px 0px;
+}
+.productdetail-text-detail-boder{
+	border-bottom: 1px solid rgb(219, 112, 11);
+	margin-bottom: 20px;
+}
+.productdetail-text-detail-boder >h5{
+	display: inline-block;
+	padding: 20px 25px;
+	background-color: rgb(219, 112, 11);
+}
+
+.productdetail-text-detail-p{
+	text-align: justify;
+}
+.productdetail-other-list{
+	margin-bottom: 30px;
+}
+.cart{
+	margin: 60px 0px;
+}
+.cart-detail{
+	line-height: 3;
+}
+.cart-detail-head>h3{
+	font-size: 30px;
+	font-weight: bold;
+}
+.cart-cart{
+	
+}
+.cart-detail-from p{
+	width: 20%;
+	display: inline-block;
+}
+.cart-detail-from label{
+	margin-right: 50px;
+}
+.cart-detail-from input{
+	padding: 10px;
+	border: none;
+	width: 250px;
+}
+.cart-table{
+	margin-bottom: 30px;
+}
+.cart-table-head>h3{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 30px 0px;
+}
+.cart-btn{
+	margin: 30px 0px;
+}
+.cart-btn-bottom{
+	margin: 30px 0px;
+	float: right;
+}
+.cart-btn-bottom::after{
+	clear: right;
+}
+.cart-detail-from-input{
+	text-align: center;
+}
+.cart-detail-from-input input{
+	border: 1px solid;
+} 
+/*footer*/
+.backgroud-footer{
+	background-color: rgba(84, 235, 14,0.3);
+	display: inline-flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 100%;
+}
+.footer-with{
+	width: 100%;
+	height: 250px;
+	padding: 25px;
+	display: inline-flex;
+}
+.footer-list{
+	line-height: 2;
+}
+.footer-with-col{
+	display: inline-block;
+	width: 33%;
+	height: auto;
+	margin-right: 100px;
+}
+.footer-information{
+	text-align: center;
+}
+.footer-information img{
+	width: 80%;
+	height: 120px;
+}
+.footer-information-text{
+	margin: 20px 0px;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	font: bold 20px;
+}
+
+/*Xây dựng bôj css responsive cho mobile có max-with 768px*/
+
+@media only screen and (max-width: 768px){
+	*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+	font-family: sans-serif;
+	}
+    .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+	width: 100%
+	}
+
+	.contact-img{
+		display: none;
+	}
+	.teamofexperts-list-text-img{
+		
+	}
+}
