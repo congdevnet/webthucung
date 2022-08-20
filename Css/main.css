@@ -222,12 +222,18 @@
 	font-size: 25px;
 	font-weight: bold;
 }
+.service-list-items{
+	margin: 30px 0px;
+	border-radius: 20px 20px 30px 30px;
+}
+
 .service-list .service-list-items:nth-child(2){
 	background-color: white;
 }
-.service-list-items{
-	margin: 10px 0px;
+.service-list-items img{
+	padding: 20px;
 }
+
 .catogery{
 	margin: 25px 0px;
 }
@@ -258,13 +264,13 @@
 	border-radius: 20px;
 }
 .catogery-list-btn button:first-child{
-	background-color: rgb(247, 108, 5);
+	background-color: rgb(129, 240, 119);
 }
 .catogery-pading{
 	padding: 10px;
 }
 .catogery-bg{
-	background-color: rgba(165, 160, 157,0.3);
+	background-color: rgba(153, 229, 182,0.5);
 	border-radius: 25px;
 }
 .catogery-img{
@@ -291,17 +297,17 @@
 .catogery-pading >ul>li{
 	display: inline-block;
 	padding: 10px 20px;
-	background-color: rgb(5, 173, 237);
+	background-color: rgb(31, 222, 107);
 	font-size: 20px;
 	color: white;
 	font-weight: bold;
 	cursor: pointer;
 }
 .catogery-pading >ul>li:hover{
-	background-color: rgb(167, 212, 229);
+	background-color: rgb(31, 141, 46);
 }
 .catogery-pading >ul>li:nth-child(2){
-	background-color: rgb(167, 212, 229);
+	background-color: rgb(127, 243, 98);
 }
 .contact-head{
 	margin: 20px 2px;
@@ -342,13 +348,13 @@
 }
 .productdetail-text span{
 	padding: 10px 20px;
-	background-color: rgb(219, 213, 208);
+	background-color: rgb(74, 235, 100);
 	margin-right: 10px;
 	border-radius: 20px;
 	cursor: pointer;
 }
 .productdetail-text span:first-child{
-	background-color: rgb(219, 112, 11);
+	background-color: rgb(164, 236, 142);
 }
 .productdetail-text label{
 	margin-right: 20px;
@@ -370,13 +376,13 @@
 	margin: 20px 0px;
 }
 .productdetail-text-detail-boder{
-	border-bottom: 1px solid rgb(219, 112, 11);
+	border-bottom: 1px solid rgb(130, 247, 130);
 	margin-bottom: 20px;
 }
 .productdetail-text-detail-boder >h5{
 	display: inline-block;
 	padding: 20px 25px;
-	background-color: rgb(219, 112, 11);
+	background-color: rgb(120, 240, 166);
 }
 
 .productdetail-text-detail-p{
@@ -434,6 +440,46 @@
 .cart-detail-from-input input{
 	border: 1px solid;
 } 
+.contact-from{
+	margin: 50px 0px;
+}
+.contact-from-set{
+	padding: 15px;
+	display: inline-flex;
+	flex-direction: column;
+	width: 100%;
+}
+.contact-from-set{
+	border-radius: 45px 5px;
+	box-shadow: 0px 10px 10px 10px rgba(196, 196, 196,0.5);
+}
+.contact-from-set>input{
+	border: none;
+	margin-bottom: 15px;
+	font-size: 18px;
+	padding: 15px;
+}
+.contact-from-set>textarea{
+	margin-bottom: 15px;
+	padding: 15px;
+}
+.contact-map{
+	padding: 5px 25px;
+}
+.contact-map > iframe{
+	width: 100%;
+	height: 400px;
+}
+.contact-from-set label{
+	text-align: center;
+	font-size: 18px;
+	color: red;
+}
+.login-link{
+	text-align: right;
+	margin: 20px 40px;
+}
+
 /*footer*/
 .backgroud-footer{
 	background-color: rgba(84, 235, 14,0.3);
@@ -487,12 +533,26 @@
 	 	width: 100%;
 		margin: auto;
 	}
-	h4,span,label,select, input{
+	.head{
+		display: none;
+	}
+	.head-moblie{
 		display: block;
+		text-align: center;
 	}
 	
-	
-	
+	h4,span,select, input{
+		width: 100%;
+		display: block;
+	}
+	.cart-detail-from p {
+		width: 100%;
+		display: inline;
+	}
+	.from-col{
+		display: inline-flex;
+		flex-direction: column;
+	}
 	.backgroud-footer,.footer-with,.footer-with-col{
 		display: inline-block;
 		text-align: center;
