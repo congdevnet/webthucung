@@ -1,0 +1,77 @@
+----TẠO DATABASE CÓ TÊN QLMT
+--CREATE DATABASE QLNT
+--GO
+USE QLNT
+GO
+---TẠO CÁC BẢNG LIÊN QUAN---
+CREATE TABLE NHANVIEN 
+(
+	MaNhanVien varchar(50) not null PRIMARY KEY,
+	TenNhanVien nvarchar(256) not null,
+	GioiTinh bit,
+	NgaySinh date,
+	DiaChi nvarchar(256),
+	SDT varchar(15)
+)
+CREATE TABLE KHACHHANG
+(
+	MaKhachHang varchar(50) not null PRIMARY KEY,
+	TenKhachHang nvarchar(256) not null,
+	DiaChi nvarchar(256),
+	SDT varchar(15)
+)
+CREATE TABLE DICHVU
+(
+	MaDichVu varchar(50) not null PRIMARY KEY,
+	TenDichVu nvarchar(256) not null,
+	DonGia NUMERIC(10,2),
+	LoaiDichVu nvarchar(256),
+)
+CREATE TABLE HOADON
+(
+	MaHoaDon int IDENTITY(1,1) not null PRIMARY KEY,
+	MaKhachHang varchar(50),
+	MaNhanVien varchar(50),
+	NgayLap date DEFAULT GETDATE(),
+)
+CREATE TABLE CHITIEHOADON
+(
+	MaHoaDon int not null,
+	MaDichVu varchar(50) not null,
+	Soluong int DEFAULT 1,
+	NgayNhanHang date,
+	TrangThai int DEFAULT 1  ,--0 là hủy 1 là chưa nhận hàng ,2 là đã nhận hàng
+)
+---TẠO KHÓA CHÍNH CHO BẢNG CHITIETHOADON
+ALTER TABLE CHITIEHOADON ADD PRIMARY KEY (MaHoaDon, MaDichVu)
+--TẠO CÁC KHÓA NGOẠI LIÊN KẾT VS CÁC BẢNG 
+ALTER TABLE HOADON
+ADD CONSTRAINT FK_KH
+  FOREIGN KEY (MaKhachHang)
+  REFERENCES KHACHHANG (MaKhachHang);
+
+ALTER TABLE HOADON
+ADD CONSTRAINT FK_NV
+  FOREIGN KEY (MaNhanVien)
+  REFERENCES NHANVIEN (MaNhanVien);
+
+ALTER TABLE CHITIEHOADON
+ADD CONSTRAINT FK_HD
+  FOREIGN KEY (MaHoaDon)
+  REFERENCES HOADON (MaHoaDon);
+
+ALTER TABLE CHITIEHOADON
+ADD CONSTRAINT FK_DV
+  FOREIGN KEY (MaDichVu)
+  REFERENCES DICHVU (MaDichVu);
+
+---TẠO DU LIEU VÀO CÁC BANG---
+
+INSERT INTO [dbo].[NHANVIEN]
+  ([MaNhanVien],[TenNhanVien],[GioiTinh],[NgaySinh],[DiaChi],[SDT])
+     VALUES
+   ('NV001',N'Nguyễn Văn An',1,'1985-01-05',N'Thái Nguyên','0369852147')
+   ('NV001',N'Nguyễn Văn An',1,'1985-01-05',N'Thái Nguyên','0369852147')
+   ('NV001',N'Nguyễn Văn An',1,'1985-01-05',N'Thái Nguyên','0369852147')
+   ('NV001',N'Nguyễn Văn An',1,'1985-01-05',N'Thái Nguyên','0369852147')
+   ('NV001',N'Nguyễn Văn An',1,'1985-01-05',N'Thái Nguyên','0369852147')
